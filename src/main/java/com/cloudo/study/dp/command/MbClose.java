@@ -21,9 +21,9 @@ public class MbClose implements Command{
         musicBox.setStatus(true);
         System.out.println("---------------music 开始---------------");
         if(musicBox.getMusicName()==null||musicBox.getMusicName().length()==0){
-            musicBox.setMusicName("七里香");
+            System.out.println("---------------播放"+musicBox.getMusicName()+"--------");
         }
-        System.out.println("---------------播放"+musicBox.getMusicName()+"--------");
+
         System.out.println("------------------------------------------------");
     }
 }

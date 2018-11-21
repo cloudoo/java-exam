@@ -10,6 +10,8 @@ public class MusicBox {
     private boolean status;
 
 
+
+
     public String getMusicName() {
 
 
@@ -26,7 +28,7 @@ public class MusicBox {
     }
 
     public void setMusicStore(List<String> musicStore ) {
-        this.musicStore = musicStore;
+        this.musicStore.addAll(musicStore);
     }
 
     public int getTone() {

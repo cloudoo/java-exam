@@ -5,7 +5,7 @@ import java.util.List;
 
 public class MbOpen implements Command{
 
-    private final MusicBox musicBox;
+    private  MusicBox musicBox;
 
     public MbOpen(MusicBox musicBox){
         this.musicBox = musicBox;
@@ -14,15 +14,14 @@ public class MbOpen implements Command{
     public void execute() {
         musicBox.setStatus(true);
         System.out.println("----------------------------------------");
-        System.out.println("---------------music 开始---------------");
-        if(musicBox.getMusicName()==null||musicBox.getMusicName().length()==0){
+        System.out.println("---------------开机，初始化---------------");
+        if(musicBox.getMusicStore()==null||musicBox.getMusicStore().size()==0){
             List<String> musicStore = new ArrayList<>();
             musicStore.add("七里香");
             musicStore.add("超人");
             musicStore.add("斗牛");
             musicBox.setMusicStore(musicStore);
         }
-        System.out.println("---------------播放"+musicBox.getMusicName()+"---------------");
 
         System.out.println("------------------------------------------------");
     }
