@@ -8,9 +8,9 @@ public class DbTest {
     @Test
     public void hello(){
 
-        DatabaseUtil db = new DatabaseUtil();
-        db.disDBQuery();
-        assertNotNull(db);
+//        DatabaseUtil db = new DatabaseUtil();
+//        db.disDBQuery();
+//        assertNotNull(db);
 
     }
 }

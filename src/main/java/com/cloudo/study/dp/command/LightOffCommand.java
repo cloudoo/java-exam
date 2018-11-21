@@ -9,13 +9,11 @@ public class LightOffCommand implements  Command{
 
     @Override
     public void execute() {
-        light.setStatus(false);
-        System.out.println("关灯");
+         light.off();
     }
 
     @Override
     public void undo() {
-        light.setStatus(true);
-        System.out.println("开灯");
+         light.on();
     }
 }
