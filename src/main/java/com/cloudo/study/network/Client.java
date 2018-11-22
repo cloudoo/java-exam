@@ -38,11 +38,11 @@ public class Client {
             e.printStackTrace();
         }finally {
             try{
-                br.close();
-                isr.close();
-                is.close();
-                osw.close();
-                os.close();
+//                br.close();
+//                isr.close();
+//                is.close();
+//                osw.close();
+//                os.close();
                 socket.close();
             }catch (Exception e){
                 e.printStackTrace();

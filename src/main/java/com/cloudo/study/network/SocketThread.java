@@ -39,12 +39,7 @@ public class SocketThread implements Runnable {
 
             socket.shutdownOutput();
 
-            //关闭流
-            osw.close();
-            os.close();
-            bufferedReader.close();
-            isr.close();
-            inputStream.close();
+
             socket.close();
         } catch (IOException e) {
             e.printStackTrace();

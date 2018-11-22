@@ -35,6 +35,7 @@ public class SocketServer {
                 System.out.println("客户端建立连接....");
 
                 Thread socketThread = new Thread(new SocketThread(socket));
+                socketThread.setPriority(4);
                 socketThread.start();
                 count++;
                 System.out.println("客户端连接数："+count);
